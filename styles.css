@@ -1,5 +1,10 @@
 ﻿:root {
-	background-color: red;
+	--beige: #eae2b7;
+	--dark_blue: #003049;
+	--orange: #f77f00;
+	--red: #d62828;
+	--light_orange: #fcbf49;
+
 }
 body {
 	
