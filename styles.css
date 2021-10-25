@@ -18,16 +18,15 @@ body {
 
 .main_wrapper {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-auto-rows: minmax(100px, auto);
+	
 }
 
 .Title {
-	grid-column: 1;
-	grid-row: 1/2;
+	grid-area: header;
+
 }
 
 .Body {
-	grid-column: 1;
-	grid-row: 2;
+	grid-area: body;
+
 }
