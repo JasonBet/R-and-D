@@ -8,7 +8,8 @@
 }
 body {
 	background-color: var(--beige);
-
+	height: 100%;
+	margin: 0;
 
 }
 
@@ -18,15 +19,36 @@ body {
 
 .main_wrapper {
 	display: grid;
-	
+	height: 100vh;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 5fr;
+	row-gap: 4em;
 }
 
-.Title {
-	grid-area: header;
-
+.Header {
+	background-color: var(--dark_blue);
+	color: var(--orange);
 }
 
 .Body {
-	grid-area: body;
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	justify-items: stretch;
+}
 
+#cont1 {
+	margin-left: 2em;
+	background-color: var(--dark_blue);
+	color: var(--orange);
+}
+
+#link {
+	place-self: center;
+	color: var(--red);
+}
+
+#cont2 {
+	margin-right: 2em;
+	background-color: var(--dark_blue);
+	color: var(--orange);
 }
