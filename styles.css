@@ -17,9 +17,10 @@ body {
 }
 
 .main_wrapper {
-	background-color: var(--beige);
-	display: grid;
 	height: 100vh;
+	background-color: var(--beige);
+
+	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 1fr 8fr;
 	row-gap: 4em;
@@ -87,4 +88,46 @@ body {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 4em;
+
+}
+
+/*end of page 1*/
+
+.wrapper2 {
+	background-color: var(--dark_blue);
+	height: 100vh;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 2fr;
+	justify-items:stretch;
+	row-gap: 6em;
+}
+
+#data_title {
+	background-color: var(--beige);
+	color: var(--orange);
+	margin-top: 4em;
+	margin-left: 35%;
+	margin-right: 35%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5em;
+	align-items: center;
+	justify-content: center;
+}
+
+#data_box {
+	background-color: var(--beige);
+	color: var(--red);
+	margin-bottom: 4em;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5em;
+	align-items: center;
+	justify-content: center;
 }
