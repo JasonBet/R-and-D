@@ -38,6 +38,7 @@ body {
 
 #cont1 {
 	margin-left: 2em;
+	margin-bottom: 4em;
 	background-color: var(--dark_blue);
 	color: var(--orange);
 }
@@ -49,6 +50,7 @@ body {
 
 #cont2 {
 	margin-right: 2em;
+	margin-bottom: 4em;
 	background-color: var(--dark_blue);
 	color: var(--orange);
 }
