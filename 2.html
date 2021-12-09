@@ -5,16 +5,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>2</title>
+    <title>API REQ</title>
 </head>
 <body>
     <div class="wrapper2">
-        <div id="data_title">
-            <div class="body_text">scoop</div>
-        </div>
+        <div id="data_title">API Sunrise Request</div>
         <div id="data_box">
-            <div class="body_text">loop</div>
         </div>
+        <script>
+            fetch("https://api.sunrise-sunset.org/json?lat=34.1083&lng=-117.2898&formatted=0")
+                .then(response => response.json())
+                .then(data => {
+                    const d = new Date(data.results.sunrise);
+                    document.getElementById("data_box").innerHTML =
+                        "Sunrise today in San Bernardino is " + d.getHours() + ':' + d.getMinutes() + 'AM';
+                });
+        </script>
     </div>
 </body>
 </html>
